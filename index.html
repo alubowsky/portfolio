@@ -15,6 +15,41 @@
         height: 300px;
         color: white;
     }
+
+    #projects {
+        background-color: black;
+        color: white;
+    }
+
+    #projects img {
+        border: 3px solid white;
+        border-radius: 10%;
+        height: 300px;
+    }
+
+    .mapApp:hover img,
+    .blogApp:hover img,
+    .ecommerceApp:hover img,
+    .photoApp:hover img {
+        opacity: 0;
+    }
+
+    .mapApp:hover p,
+    .blogApp:hover p,
+    .ecommerceApp:hover p,
+    .photoApp:hover p {
+        opacity: 1;
+    }
+
+    .mapApp p,
+    .blogApp p,
+    .ecommerceApp p,
+    .photoApp p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
 </style>
 
 <body>
@@ -37,13 +72,47 @@
     <div id="header">
         <h1 class="text-center pt-5">Aviva Lubowsky</h1>
         <h2 class="text-center">Web and Software Developer</h2>
+        <div class="text-center">
+            <a href="headerbg.jpg" download class="btn btn-lg btn-light">Download Resume</a>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <div id="projects" class="container mb-5 pb-5">
+        <h2 class="text-center m-3 pb-3">Projects</h2>
+        <div class="row text-center">
+            <div class="col-md-4 offset-md-1 photoApp">
+                <a target="_blank" href="https://alubowsky.github.io/photoApp/">
+                    <img class="img-fluid w-100" src="photoAppPic.JPG" alt="">
+                </a>
+                <p>hello</p>
+            </div>
+            <div class="col-md-4 offset-md-2 ecommerceApp">
+                <a target="_blank" href="https://samplesupplies.000webhostapp.com/">
+                    <img class="img-fluid w-100" src="EcommercePic.JPG" alt="">
+                </a>
+                <p>hello</p>
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col-md-4 offset-md-1 blogApp">
+                <a target="_blank" href="https://alubowsky.github.io/blogApp/">
+                    <img class="img-fluid w-100" src="blogPic.JPG" alt=" ">
+                </a>
+                <p>hello</p>
+            </div>
+            <div class="col-md-4 offset-md-2 mapApp ">
+                <a target="_blank " href="https://alubowsky.github.io/mapApp/ ">
+                    <img class="img-fluid w-100 " src="EcommercePic.JPG " alt=" ">
+                </a>
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
 </body>
 
 </html>
