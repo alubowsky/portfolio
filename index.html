@@ -17,12 +17,11 @@
     }
 
     #projects {
-        background-color: black;
-        color: white;
+        color: black;
     }
 
     #projects img {
-        border: 3px solid white;
+        border: 3px solid black;
         border-radius: 10%;
         height: 300px;
     }
@@ -32,6 +31,14 @@
     .ecommerceApp:hover img,
     .photoApp:hover img {
         opacity: 0;
+    }
+
+    .mapApp:hover,
+    .blogApp:hover,
+    .ecommerceApp:hover,
+    .photoApp:hover {
+        border: 3px solid black;
+        border-radius: 10%;
     }
 
     .mapApp:hover p,
@@ -47,8 +54,37 @@
     .photoApp p {
         position: absolute;
         top: 0;
-        left: 0;
         opacity: 0;
+        margin: 35px;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    #skillsList {
+        border: 1px solid black;
+        border-top: none;
+        border-bottom: none;
+        box-sizing: border-box;
+    }
+
+    #skills-header {
+        height: 200px;
+        color: white;
+        background: url('skillsBg.jpg')fixed center center no-repeat;
+        background-size: cover;
+    }
+
+    #skills-header h2 {
+        position: relative;
+        left: 0;
+        top: 44%;
+        width: 100%;
+        text-align: center;
     }
 </style>
 
@@ -73,7 +109,7 @@
         <h1 class="text-center pt-5">Aviva Lubowsky</h1>
         <h2 class="text-center">Web and Software Developer</h2>
         <div class="text-center">
-            <a href="headerbg.jpg" download class="btn btn-lg btn-light">Download Resume</a>
+            <a href="Aviva Lubowsky Resume.pdf" download class="btn btn-lg btn-light">Download Resume</a>
         </div>
     </div>
     <div id="projects" class="container mb-5 pb-5">
@@ -83,13 +119,14 @@
                 <a target="_blank" href="https://alubowsky.github.io/photoApp/">
                     <img class="img-fluid w-100" src="photoAppPic.JPG" alt="">
                 </a>
-                <p>hello</p>
+                <p>Photo App where user can search for relevent photos. Developed using React.js, bootstrap, ajax and the
+                    flikr api</p>
             </div>
             <div class="col-md-4 offset-md-2 ecommerceApp">
                 <a target="_blank" href="https://samplesupplies.000webhostapp.com/">
                     <img class="img-fluid w-100" src="EcommercePic.JPG" alt="">
                 </a>
-                <p>hello</p>
+                <p>Ecommerce style site, with CRUD operations. Built with PHP, MySQL, and MVC pattern.</p>
             </div>
         </div>
         <div class="row text-center mt-5">
@@ -97,14 +134,49 @@
                 <a target="_blank" href="https://alubowsky.github.io/blogApp/">
                     <img class="img-fluid w-100" src="blogPic.JPG" alt=" ">
                 </a>
-                <p>hello</p>
+                <p>A Single Page Application sample blog site. Uses JS, jquery, ajax and json.</p>
             </div>
             <div class="col-md-4 offset-md-2 mapApp ">
                 <a target="_blank " href="https://alubowsky.github.io/mapApp/ ">
-                    <img class="img-fluid w-100 " src="EcommercePic.JPG " alt=" ">
+                    <img class="img-fluid w-100 " src="mapPic.JPG " alt=" ">
                 </a>
-                <p>hello</p>
+                <p>Google Maps data mashup where a user can search a topic, markers appear on a map with a listing of locations</p>
             </div>
+        </div>
+    </div>
+    <div id="skills" class="mb-5">
+        <div id="skills-header">
+            <h2 class="text-center">Skills</h2>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <div id="skillsList" class="col-4">
+                <h4 class="text-center slate">Languages</h4>
+                <ul class="gunmetal">
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div id="skillsList" class="col-4">
+                <h4 class="text-center slate">Frameworks & Tools</h4>
+                <ul class="gunmetal">
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>jQuery</li>
+                    <li>Visual Studio Code</li>
+                    <li>Bootstrap</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="m-5">
+        <div>
+            <h2 class="text-center slate">Contact</h2>
+            <h5 class="text-center">Location: Chicago Area ~ Email: lubowskyaviva@gmail.com ~ LinkedIn: linkedin.com/in/aviva-lubowsky</h5>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
